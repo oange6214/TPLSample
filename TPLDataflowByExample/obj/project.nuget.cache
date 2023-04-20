@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T/JeveUdJyc7+ymKKVwDdrqXp4cIXc+ahFKBSSrnJKRUKc/sH8zp3rWSOczrh5nV+r+pho0hVPqxwat8SCCFAw==",
+  "success": true,
+  "projectFilePath": "C:\\BrightestTECH\\Devolop\\CSharp\\SampleSpace\\TPLSample\\TPLDataflowByExample\\TPLDataflowByExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pohan_lin\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
