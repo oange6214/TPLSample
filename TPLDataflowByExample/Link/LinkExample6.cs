@@ -13,15 +13,17 @@ namespace TPLDataflowByExample.Link
 
             var bufferBlock = new BufferBlock<int>();
 
+
             bufferBlock.LinkTo(actionBlock1, new DataflowLinkOptions { PropagateCompletion = true });
             bufferBlock.LinkTo(actionBlock2, new DataflowLinkOptions { PropagateCompletion = true });
             bufferBlock.LinkTo(actionBlock3, new DataflowLinkOptions { PropagateCompletion = true });
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 10; i++)
             {
                 await bufferBlock.SendAsync(i);
             }
 
+            bufferBlock.Complete();
             await Task.WhenAll(actionBlock1.Completion, actionBlock2.Completion, actionBlock3.Completion);
 
             Console.WriteLine("Done");

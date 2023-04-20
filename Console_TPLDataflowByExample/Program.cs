@@ -177,7 +177,7 @@ Console.WriteLine($"Start Main thread id : {Environment.CurrentManagedThreadId}"
 /*
  * 1 to N 工作自動分配
  */
-LinkExample6.Run();
+await LinkExample6.Run();
 
 
 /* 
